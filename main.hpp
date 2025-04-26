@@ -3,9 +3,9 @@ using namespace std;
 //********************
 // Declare Function Prototypes
 //********************
-void getTwoValues(int, int);
-void getNextPrime(int, int);
-void getPrevPrime(int, int);
+void getTwoValues(int&, int&);
+void getNextPrime(int);
+void getPrevPrime(int);
 bool isPrime();
 
 // ******************************
