@@ -4,8 +4,8 @@ using namespace std;
 // Declare Function Prototypes
 //********************
 void getTwoValues(int&, int&);
-void getNextPrime(int);
-void getPrevPrime(int);
+int getNextPrime(int);
+int getPrevPrime(int);
 bool isPrime();
 
 // ******************************
@@ -25,21 +25,26 @@ bool isPrime(int num)
     return true;
 }
 
-void getTwoValues(int n1, int n2)
+void getTwoValues(int& begin, int& end)
 {
-    int n1, n2;
-    cin >> n1 >> n2; 
-    cout << n1 << " " << n2 << " " << endl;
+    cin >> begin >> end; 
 }
 
-void getPrevPime(int n1)
+void getPrevPime(int num)
 {
-    int n1;
-    isPrime(n1);
+    int prev = num - 1;
+    isPrime(num);
 }
 
-void getNextPrime(int n1)
+int getNextPrime(int num)
 {
-    int n1;
-    isPrime(n1);
+    int next = num + 1;
+    while (true)
+    {
+        if (isPrime(next))
+        {
+            return next;
+        }
+        next++;
+    }
 }
