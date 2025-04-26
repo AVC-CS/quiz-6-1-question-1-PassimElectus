@@ -18,10 +18,11 @@ bool isPrime(int num)
     {
         return false;
     }
-    for (int i = 2; i< num; i++)
+    for (int i = 2; i*i <= num; i++)
     {
-        cout << "placeholder";
+        if(num % i == 0) return false;
     }
+    return true;
 }
 
 void getTwoValues(int n1, int n2)
@@ -33,5 +34,12 @@ void getTwoValues(int n1, int n2)
 
 void getPrevPime(int n1)
 {
+    int n1;
+    isPrime(n1);
+}
 
+void getNextPrime(int n1)
+{
+    int n1;
+    isPrime(n1);
 }
