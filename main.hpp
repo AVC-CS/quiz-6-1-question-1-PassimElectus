@@ -6,11 +6,24 @@ using namespace std;
 void getTwoValues(int, int);
 void getNextPrime(int, int);
 void getPrevPrime(int, int);
-
 bool isPrime();
+
 // ******************************
 // Implement all your functions here
 // ******************************
+
+bool isPrime(int num)
+{
+    if (num <= 1)
+    {
+        return false;
+    }
+    for (int i = 2; i< num; i++)
+    {
+        cout << "placeholder";
+    }
+}
+
 void getTwoValues(int n1, int n2)
 {
     int n1, n2;
@@ -20,5 +33,5 @@ void getTwoValues(int n1, int n2)
 
 void getPrevPime(int n1)
 {
-    
+
 }
