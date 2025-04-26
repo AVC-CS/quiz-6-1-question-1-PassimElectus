@@ -30,10 +30,17 @@ void getTwoValues(int& begin, int& end)
     cin >> begin >> end; 
 }
 
-void getPrevPime(int num)
+int getPrevPrime(int num)
 {
     int prev = num - 1;
-    isPrime(num);
+    while (prev >= 2)
+    {
+        if (isPrime(prev))
+        {
+            return prev;
+        }
+        prev--;
+    }
 }
 
 int getNextPrime(int num)
